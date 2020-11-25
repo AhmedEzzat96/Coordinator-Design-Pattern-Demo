@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstVCViewController.swift
 //  Coordinator-Demo
 //
 //  Created by Ahmed Ezzat on 25/11/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, Storyboard {
+class FirstVC: UIViewController, Storyboard {
     //MARK:- Properties
     weak var coordinator: MainCoordinator?
     
@@ -17,14 +17,4 @@ class ViewController: UIViewController, Storyboard {
         super.viewDidLoad()
     }
     
-    //MARK:- IBActions
-    @IBAction func goToFirstVC(_ sender: UIButton) {
-        coordinator?.firstVC()
-    }
-    
-    @IBAction func goToSecondVC(_ sender: UIButton) {
-        coordinator?.secondVC()
-    }
-
 }
-
